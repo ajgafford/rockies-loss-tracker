@@ -4,10 +4,13 @@ import os
 import datetime
 import plotly.express as px
 
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+processed_data_dir = os.path.join(project_root, 'Data', 'Processed')
+
 @st.cache_data
 
 def load_data():
-    df = pd.read_csv("./Data/Processed/losers.csv")
+    df = pd.read_csv(os.path.join(processed_data_dir, 'losers.csv'))
     return df
 
 def get_last_updated(filepath):
@@ -18,7 +21,7 @@ def get_last_updated(filepath):
 st.set_page_config(page_title="2025 Colorado Rockies Loss Tracker", layout="centered")
 
 st.title("2025 Rockies Loss Tracker")
-filepath = "./Data/Processed/losers.csv"
+filepath = os.path.join(processed_data_dir, 'losers.csv')
 st.caption(f"Last updated: {get_last_updated(filepath)}")
 
 df = load_data()
