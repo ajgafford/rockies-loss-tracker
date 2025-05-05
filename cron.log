@@ -1,3 +1,44 @@
 /Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/Scripts/scrape_games.py': [Errno 2] No such file or directory
 /Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/Scripts/merge_schedules.py': [Errno 2] No such file or directory
 /Library/Developer/CommandLineTools/usr/bin/python3: can't open file '/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/app.py': [Errno 2] No such file or directory
+/Users/ajgafford/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/scrape_games.py", line 6, in <module>
+    os.makedirs('../Data/Raw', exist_ok=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py", line 215, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py", line 225, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '../Data'
+Traceback (most recent call last):
+  File "/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/merge_schedules.py", line 4, in <module>
+    rockies = pd.read_csv('../Data/Raw/COL_2025_schedule.csv')
+  File "/Users/ajgafford/Library/Python/3.9/lib/python/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ajgafford/Library/Python/3.9/lib/python/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ajgafford/Library/Python/3.9/lib/python/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Users/ajgafford/Library/Python/3.9/lib/python/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/Users/ajgafford/Library/Python/3.9/lib/python/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../Data/Raw/COL_2025_schedule.csv'
+2025-05-05 13:47:48.311 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2025-05-05 13:47:48.313 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-05-05 13:47:48.313 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-05-05 13:47:48.364 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run /Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/../app.py [ARGUMENTS]
+2025-05-05 13:47:48.364 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Traceback (most recent call last):
+  File "/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/../app.py", line 22, in <module>
+    st.caption(f"Last updated: {get_last_updated(filepath)}")
+  File "/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/../app.py", line 14, in get_last_updated
+    timestamp = os.path.getmtime(filepath)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [Errno 2] No such file or directory: './Data/Processed/losers.csv'
