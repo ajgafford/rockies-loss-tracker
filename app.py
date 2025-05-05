@@ -81,7 +81,6 @@ game_limit = st.slider("Show up to game #:", 1, max_games, max_games)
 filtered_df = df[df['Games Played'] <= game_limit]
 
 # LINE CHART
-
 color_map = {
     '2025 COL':'purple',
     '2024 CHW':'white',
