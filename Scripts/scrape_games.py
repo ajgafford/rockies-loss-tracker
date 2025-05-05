@@ -3,7 +3,11 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-os.makedirs('../Data/Raw', exist_ok=True)
+# dynamically get the project root
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+raw_data_dir = os.path.join(project_root, 'Data', 'Raw')
+
+os.makedirs(raw_data_dir, exist_ok=True)
 
 def fetch_game_data():
     url = 'https://www.baseball-reference.com/teams/COL/2025-schedule-scores.shtml'
@@ -46,7 +50,7 @@ def fetch_game_data():
 
 def save_to_csv(games_data):
     df = pd.DataFrame(games_data)
-    filename = '../Data/Raw/COL_2025_schedule.csv'
+    filename = os.path.join(raw_data_dir, 'COL_2025_schedule.csv')
     df.to_csv(filename, index=False)
     print(f'Data saved to {filename}!')
 
