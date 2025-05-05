@@ -1,9 +1,15 @@
+import os
 import pandas as pd
 
+# get the project root directory
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+raw_data_dir = os.path.join(project_root, 'Data', 'Raw')
+processed_data_dir = os.path.join(project_root, 'Data', 'Processed')
+
 # read in the schedules for the three teams
-rockies = pd.read_csv('../Data/Raw/COL_2025_schedule.csv')
-sox = pd.read_csv('../Data/Raw/CHW_2024_schedule.csv', usecols=['Gm#', 'W/L', 'R', 'RA'])
-mets = pd.read_csv('../Data/Raw/NYM_1962_schedule.csv', usecols=['Gm#', 'W/L', 'R', 'RA'])
+rockies = pd.read_csv(os.path.join(raw_data_dir, 'COL_2025_schedule.csv'))
+sox = pd.read_csv(os.path.join(raw_data_dir, 'CHW_2024_schedule.csv'), usecols=['Gm#', 'W/L', 'R', 'RA'])
+mets = pd.read_csv(os.path.join(raw_data_dir, 'NYM_1962_schedule.csv'), usecols=['Gm#', 'W/L', 'R', 'RA'])
 
 # rename columns in sox and mets
 for team in [sox, mets]:
@@ -24,4 +30,4 @@ for team in [rockies, sox, mets]:
 
 # join everyone together
 losers = pd.concat([rockies, sox, mets], ignore_index=True)
-losers.to_csv('../Data/Processed/losers.csv', index=False)
+losers.to_csv(os.path.join(processed_data_dir, 'losers.csv'), index=False)
