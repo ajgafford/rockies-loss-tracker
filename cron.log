@@ -42,3 +42,151 @@ Traceback (most recent call last):
   File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/genericpath.py", line 55, in getmtime
     return os.stat(filename).st_mtime
 FileNotFoundError: [Errno 2] No such file or directory: './Data/Processed/losers.csv'
+/Users/ajgafford/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Skipping row. Non-numeric R or RA. 35Tuesday, May 6previewCOLDET8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 36Wednesday, May 7previewCOLDET8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 37Thursday, May 8previewCOLDET3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 38Friday, May 9previewCOLSDP8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 39Saturday, May 10previewCOLSDP8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 40Sunday, May 11previewCOLSDP3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 41Monday, May 12previewCOL@TEX8:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 42Tuesday, May 13previewCOL@TEX8:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 43Wednesday, May 14previewCOL@TEX8:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 44Friday, May 16previewCOL@ARI9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 45Saturday, May 17previewCOL@ARI8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 46Sunday, May 18previewCOL@ARI4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 47Monday, May 19previewCOLPHI8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 48Tuesday, May 20previewCOLPHI8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 49Wednesday, May 21previewCOLPHI8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 50Thursday, May 22previewCOLPHI3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 51Friday, May 23previewCOLNYY8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 52Saturday, May 24previewCOLNYY4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 53Sunday, May 25previewCOLNYY3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 54Monday, May 26previewCOL@CHC2:20 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 55Tuesday, May 27previewCOL@CHC8:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 56Wednesday, May 28previewCOL@CHC8:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 57Friday, May 30previewCOL@NYM7:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 58Saturday, May 31previewCOL@NYM4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 59Sunday, Jun 1previewCOL@NYM1:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 60Monday, Jun 2previewCOL@MIA6:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 61Tuesday, Jun 3previewCOL@MIA6:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 62Wednesday, Jun 4previewCOL@MIA12:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 63Friday, Jun 6previewCOLNYM8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 64Saturday, Jun 7previewCOLNYM9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 65Sunday, Jun 8previewCOLNYM3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 66Tuesday, Jun 10previewCOLSFG8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 67Wednesday, Jun 11previewCOLSFG8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 68Thursday, Jun 12previewCOLSFG3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 69Friday, Jun 13previewCOL@ATL7:15 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 70Saturday, Jun 14previewCOL@ATL4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 71Sunday, Jun 15previewCOL@ATL1:35 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 72Monday, Jun 16previewCOL@WSN6:45 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 73Tuesday, Jun 17previewCOL@WSN6:45 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 74Wednesday, Jun 18previewCOL@WSN6:45 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 75Thursday, Jun 19previewCOL@WSN1:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 76Friday, Jun 20previewCOLARI8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 77Saturday, Jun 21previewCOLARI9:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 78Sunday, Jun 22previewCOLARI3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 79Tuesday, Jun 24previewCOLLAD8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 80Wednesday, Jun 25previewCOLLAD8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 81Thursday, Jun 26previewCOLLAD3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 82Friday, Jun 27previewCOL@MIL8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 83Saturday, Jun 28previewCOL@MIL4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 84Sunday, Jun 29previewCOL@MIL2:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 85Tuesday, Jul 1previewCOLHOU8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 86Wednesday, Jul 2previewCOLHOU8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 87Thursday, Jul 3previewCOLHOU3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 88Friday, Jul 4previewCOLCHW8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 89Saturday, Jul 5previewCOLCHW9:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 90Sunday, Jul 6previewCOLCHW3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 91Monday, Jul 7previewCOL@BOS7:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 92Tuesday, Jul 8previewCOL@BOS7:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 93Wednesday, Jul 9previewCOL@BOS7:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 94Friday, Jul 11previewCOL@CIN7:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 95Saturday, Jul 12previewCOL@CIN4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 96Sunday, Jul 13previewCOL@CIN1:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 97Friday, Jul 18previewCOLMIN8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 98Saturday, Jul 19previewCOLMIN8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 99Sunday, Jul 20previewCOLMIN3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 100Monday, Jul 21previewCOLSTL8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 101Tuesday, Jul 22previewCOLSTL8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 102Wednesday, Jul 23previewCOLSTL3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 103Friday, Jul 25previewCOL@BAL7:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 104Saturday, Jul 26previewCOL@BAL7:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 105Sunday, Jul 27previewCOL@BAL1:35 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 106Monday, Jul 28previewCOL@CLE6:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 107Tuesday, Jul 29previewCOL@CLE6:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 108Wednesday, Jul 30previewCOL@CLE6:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 109Friday, Aug 1previewCOLPIT8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 110Saturday, Aug 2previewCOLPIT3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 111Sunday, Aug 3previewCOLPIT3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 112Monday, Aug 4previewCOLTOR8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 113Tuesday, Aug 5previewCOLTOR8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 114Wednesday, Aug 6previewCOLTOR3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 115Friday, Aug 8previewCOL@ARI9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 116Saturday, Aug 9previewCOL@ARI8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 117Sunday, Aug 10previewCOL@ARI4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 118Monday, Aug 11previewCOL@STL7:45 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 119Tuesday, Aug 12previewCOL@STL7:45 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 120Wednesday, Aug 13previewCOL@STL2:15 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 121Thursday, Aug 14previewCOLARI8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 122Friday, Aug 15previewCOLARI8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 123Saturday, Aug 16previewCOLARI8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 124Sunday, Aug 17previewCOLARI3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 125Monday, Aug 18previewCOLLAD8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 126Tuesday, Aug 19previewCOLLAD8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 127Wednesday, Aug 20previewCOLLAD8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 128Thursday, Aug 21previewCOLLAD3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 129Friday, Aug 22previewCOL@PIT6:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 130Saturday, Aug 23previewCOL@PIT6:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 131Sunday, Aug 24previewCOL@PIT12:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 132Tuesday, Aug 26previewCOL@HOU8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 133Wednesday, Aug 27previewCOL@HOU8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 134Thursday, Aug 28previewCOL@HOU2:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 135Friday, Aug 29previewCOLCHC8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 136Saturday, Aug 30previewCOLCHC8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 137Sunday, Aug 31previewCOLCHC3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 138Monday, Sep 1previewCOLSFG4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 139Tuesday, Sep 2previewCOLSFG8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 140Wednesday, Sep 3previewCOLSFG8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 141Friday, Sep 5previewCOLSDP8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 142Saturday, Sep 6previewCOLSDP8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 143Sunday, Sep 7previewCOLSDP3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 144Monday, Sep 8previewCOL@LAD10:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 145Tuesday, Sep 9previewCOL@LAD10:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 146Wednesday, Sep 10previewCOL@LAD10:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 147Thursday, Sep 11previewCOL@SDP9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 148Friday, Sep 12previewCOL@SDP9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 149Saturday, Sep 13previewCOL@SDP8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 150Sunday, Sep 14previewCOL@SDP4:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 151Tuesday, Sep 16previewCOLMIA8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 152Wednesday, Sep 17previewCOLMIA8:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 153Thursday, Sep 18previewCOLMIA3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 154Friday, Sep 19previewCOLLAA8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 155Saturday, Sep 20previewCOLLAA8:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 156Sunday, Sep 21previewCOLLAA3:10 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 157Tuesday, Sep 23previewCOL@SEA9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 158Wednesday, Sep 24previewCOL@SEA9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 159Thursday, Sep 25previewCOL@SEA9:40 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 160Friday, Sep 26previewCOL@SFG10:15 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 161Saturday, Sep 27previewCOL@SFG4:05 pmGame Preview, and Matchups
+Skipping row. Non-numeric R or RA. 162Sunday, Sep 28previewCOL@SFG3:05 pmGame Preview, and Matchups
+Data saved to /Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Data/Raw/COL_2025_schedule.csv!
+2025-05-05 13:56:01.515 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2025-05-05 13:56:01.517 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-05-05 13:56:01.517 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2025-05-05 13:56:01.570 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run /Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/../app.py [ARGUMENTS]
+2025-05-05 13:56:01.570 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Traceback (most recent call last):
+  File "/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/../app.py", line 22, in <module>
+    st.caption(f"Last updated: {get_last_updated(filepath)}")
+  File "/Users/ajgafford/Documents/Projects/Reached_on_Error/Rockies_Loss_Tracker/Scripts/../app.py", line 14, in get_last_updated
+    timestamp = os.path.getmtime(filepath)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [Errno 2] No such file or directory: './Data/Processed/losers.csv'
