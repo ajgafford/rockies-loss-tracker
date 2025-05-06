@@ -5,7 +5,10 @@ import datetime
 import plotly.express as px
 
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-processed_data_dir = os.path.join(project_root, 'Data', 'Processed')
+project_dir = os.path.join(project_root, 'Rockies_Loss_Tracker')
+processed_data_dir = os.path.join(project_dir, 'Data', 'Processed')
+filepath = os.path.join(processed_data_dir, 'losers.csv')
+print(f'File path: {filepath}')
 
 @st.cache_data
 
@@ -21,7 +24,6 @@ def get_last_updated(filepath):
 st.set_page_config(page_title="2025 Colorado Rockies Loss Tracker", layout="centered")
 
 st.title("2025 Rockies Loss Tracker")
-filepath = os.path.join(processed_data_dir, 'losers.csv')
 st.caption(f"Last updated: {get_last_updated(filepath)}")
 
 df = load_data()
