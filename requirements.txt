@@ -31,6 +31,7 @@ parso==0.8.4
 pexpect==4.9.0
 pillow==11.2.1
 platformdirs==4.3.7
+plotly==5.3.1
 prompt_toolkit==3.0.51
 psutil==7.0.0
 ptyprocess==0.7.0
