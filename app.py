@@ -8,8 +8,6 @@ project_root = os.path.dirname(os.path.abspath(__file__))
 processed_data_dir = os.path.join(project_root, 'Data', 'Processed')
 filepath = os.path.join(processed_data_dir, 'losers.csv')
 
-@st.cache_data
-
 def get_last_updated(filepath):
     timestamp = os.path.getmtime(filepath)
     return datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
