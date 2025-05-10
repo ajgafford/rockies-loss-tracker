@@ -4,17 +4,11 @@ import os
 import datetime
 import plotly.express as px
 
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-project_dir = os.path.join(project_root, 'Rockies_Loss_Tracker')
-processed_data_dir = os.path.join(project_dir, 'Data', 'Processed')
+project_root = os.path.dirname(os.path.abspath(__file__))
+processed_data_dir = os.path.join(project_root, 'Data', 'Processed')
 filepath = os.path.join(processed_data_dir, 'losers.csv')
-print(f'File path: {filepath}')
 
 @st.cache_data
-
-def load_data():
-    df = pd.read_csv(os.path.join(processed_data_dir, 'losers.csv'))
-    return df
 
 def get_last_updated(filepath):
     timestamp = os.path.getmtime(filepath)
@@ -26,7 +20,7 @@ st.set_page_config(page_title="2025 Colorado Rockies Loss Tracker", layout="cent
 st.title("2025 Rockies Loss Tracker")
 st.caption(f"Last updated: {get_last_updated(filepath)}")
 
-df = load_data()
+df = pd.read_csv(os.path.join(processed_data_dir, 'losers.csv'))
 max_games = int(df['Games Played'].max())
 
 # calculate projected losses for a 162-game season
