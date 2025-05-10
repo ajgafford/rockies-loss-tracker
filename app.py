@@ -42,7 +42,7 @@ if projected_losses > 121: # they would break the record
         delta_color="inverse"
     )
     st.markdown(f"""
-    The 2025 Rockies are projected to break the record for most losses in a season
+    The 2025 Rockies are on pace to break the record for most losses in a season
     (currently held by the 2024 Chicago White Sox with 121 losses) by **{exceed_by:.0f} games**.
     """)
 else:
