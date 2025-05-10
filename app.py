@@ -10,7 +10,7 @@ filepath = os.path.join(processed_data_dir, 'losers.csv')
 
 def get_last_updated(filepath):
     timestamp = os.path.getmtime(filepath)
-    return datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
+    return datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
 # MAIN APP
 st.set_page_config(page_title="2025 Colorado Rockies Loss Tracker", layout="centered")
