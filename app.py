@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import datetime
+from zoneinfo import ZoneInfo
 import plotly.express as px
 
 project_root = os.path.dirname(os.path.abspath(__file__))
@@ -10,7 +11,8 @@ filepath = os.path.join(processed_data_dir, 'losers.csv')
 
 def get_last_updated(filepath):
     timestamp = os.path.getmtime(filepath)
-    return datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M')
+    central_time = datetime.fromtimestamp(timestamp, tz=ZoneInfo("America/Chicago"))
+    return central_time.strftime('%Y-%m-%d %H:%M %Z')
 
 # MAIN APP
 st.set_page_config(page_title="2025 Colorado Rockies Loss Tracker", layout="centered")
