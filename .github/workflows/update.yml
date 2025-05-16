@@ -1,35 +1,29 @@
-name: Daily Update - Rockies Tracker
-
-on:
-  schedule:
-    - cron: '0 13 * * *'  # Runs every day at 8 AM CST (13:00 UTC)
-  workflow_dispatch:        # Allows manual trigger from GitHub UI
-
 jobs:
-  update:
+  update-data:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: 3.10
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: Run update script
-        run: |
-          python Scripts/run_scripts.py
+      - name: Run update scripts
+        run: python Scripts/run_scripts.py
 
-      - name: Commit and push if there are changes
+      - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "Daily update: $(date -u)"
-          git push
+          git config --global user.email "ajgafford@example.com"
+          git config --global user.name "ajgafford"
+          git remote set-url origin https://$PAT_TOKEN@github.com/ajgafford/rockies-loss-tracker.git
+          git add .
+          git commit -m "Automated update from GitHub Actions" || echo "No changes to commit"
+          git push origin main
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
