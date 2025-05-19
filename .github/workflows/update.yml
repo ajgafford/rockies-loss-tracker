@@ -28,4 +28,4 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "Automated data update"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
