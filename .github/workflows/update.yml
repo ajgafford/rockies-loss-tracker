@@ -23,9 +23,9 @@ jobs:
       - name: Commit & push changes
         run: |
           git config --global user.name "ajgafford"
-          git config --global user.email "andrew.gafford@gmail.com"
+          git config --global user.email "youremail@example.com"
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Automated data update"
-          git push
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/ajgafford/rockies-loss-tracker.git
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
