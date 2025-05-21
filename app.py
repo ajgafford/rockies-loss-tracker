@@ -17,11 +17,20 @@ def get_last_updated(filepath):
 # MAIN APP
 st.set_page_config(page_title="2025 Colorado Rockies Loss Tracker", layout="centered")
 
-st.title("2025 Rockies Loss Tracker")
-st.caption(f"Last updated: {get_last_updated(filepath)}")
+st.title("The 2025 Rockies Tracker")
+st.caption(f"Last updated: {get_last_updated(filepath)} CDT")
 
 df = pd.read_csv(os.path.join(processed_data_dir, 'losers.csv'))
 max_games = int(df['Games Played'].max())
+
+# LAST GAME
+st.subheader("Last Game Results")
+
+rox = df[df['Team'] == '2025 COL']
+last_game = rox.iloc[-1] # get the last row (game)
+
+if (last_game['R'] > last_game['RA']): # the rockies win
+    print(f"The Rockies won game {last_game['GP']}, {last_game['R']} to {last_game['RA']}.\nThe Rockies are now {last_game['GP'] - last_game['Losses']} - {last_game['Losses']}.")
 
 # calculate projected losses for a 162-game season
 latest_rockies = df[df['Team'] == '2025 COL'].iloc[-1]  # get the latest game for the Rockies
@@ -32,6 +41,7 @@ rockies_games_played = latest_rockies['Games Played']
 losses_per_game = rockies_losses / rockies_games_played
 projected_losses = losses_per_game * 162
 
+# 162 GAME PACE
 st.subheader("Projected 162-Game Losses")
 if projected_losses > 121: # they would break the record
     exceed_by = projected_losses - 121
