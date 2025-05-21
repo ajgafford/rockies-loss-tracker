@@ -147,7 +147,7 @@ else:
     )
 
 # RD LINE CHART
-filtered_df = df[(df['Team'] == '1932 BOS') || (df['Team'] == '2025 COL')]
+filtered_df = df[(df['Team'] == '1932 BOS') or (df['Team'] == '2025 COL')]
 
 color_map = {
     '2025 COL':'purple',
