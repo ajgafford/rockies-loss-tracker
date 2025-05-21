@@ -120,4 +120,28 @@ with columns[1]:
     st.metric(label="2025 COL Runs Allowed", value=rox['RA'].cumsum().iloc[-1])
 
 with columns[2]:
-    st.metric(label="2025 COL Run Differential", value=rox['RD'].iloc[-1])    
+    st.metric(label="2025 COL Run Differential", value=rox['RD'].iloc[-1])
+
+# 162 GAME RD PACE
+rockies_rd = latest_rockies['RD']
+rd_per_game = rockies_rd / rockies_games_played
+projected_rd = rd_per_game * 162
+
+st.subheader("Projected 162-Game Run Differential")
+if projected_rd < -349: # they would break the record
+    exceed_by = -1 * projected_rd - 349
+    st.metric(
+        label="Projected Run Differential for 2025 COL",
+        value=f"{projected_rd:.0f}",
+        delta=f"Breaking record by {exceed_by:.0f} runs!",
+        delta_color="inverse"
+    )
+    st.markdown(f"""
+    The 2025 Rockies are on pace to break the Modern Era (1901 - Present) record for worst run differential in a season
+    (currently held by the 1932 Boston Red Sox with -349 runs) by **{exceed_by:.0f} runs**.
+    """)
+else:
+    st.metric(
+        label="Projected Run Differential for 2025 COL",
+        value=f"{projected_rd:.0f}"
+    )
