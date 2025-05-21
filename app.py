@@ -18,7 +18,7 @@ def get_last_updated(filepath):
 st.set_page_config(page_title="2025 Colorado Rockies Loss Tracker", layout="centered")
 
 st.title("The 2025 Rockies Tracker")
-st.caption(f"Last updated: {get_last_updated(filepath)} CDT")
+st.caption(f"Last updated: {get_last_updated(filepath)}")
 
 df = pd.read_csv(os.path.join(processed_data_dir, 'losers.csv'))
 max_games = int(df['Games Played'].max())
