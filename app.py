@@ -91,7 +91,7 @@ game_limit = st.slider("Show up to game #:", 1, max_games, max_games)
 filtered_df = df[df['Team'] != '1932 BOS']
 filtered_df = filtered_df[filtered_df['Games Played'] <= game_limit]
 
-# LINE CHART
+# LOSSES LINE CHART
 color_map = {
     '2025 COL':'purple',
     '2024 CHW':'white',
@@ -145,3 +145,22 @@ else:
         label="Projected Run Differential for 2025 COL",
         value=f"{projected_rd:.0f}"
     )
+
+# RD LINE CHART
+filtered_df = df[(df['Team'] == '1932 BOS') || (df['Team'] == '2025 COL')]
+
+color_map = {
+    '2025 COL':'purple',
+    '1932 BOS':'red'
+}
+
+fig = px.line(
+    filtered_df,
+    x="Games Played",
+    y="RD",
+    color="Team",
+    color_discrete_map=color_map,
+    title="Run Differential by Games Played"
+)
+
+st.plotly_chart(fig, use_container_width=True)
