@@ -113,10 +113,10 @@ st.subheader("Run Differential")
 columns = st.columns(3)
 
 with columns[0]:
-    st.metric(label="Runs Scored", value=rox['R'].cumsum().iloc[-1])
+    st.metric(label="2025 COL Runs Scored", value=rox['R'].cumsum().iloc[-1])
 
 with columns[1]:
-    st.metric(label="Runs Allowed", value=rox['RA'].cumsum().iloc[-1])
+    st.metric(label="2025 COL Runs Allowed", value=rox['RA'].cumsum().iloc[-1])
 
 with columns[2]:
-    st.metric(label="Run Differential", value=rox['RD'].iloc[-1])    
+    st.metric(label="2025 COL Run Differential", value=rox['RD'].iloc[-1])    
