@@ -30,9 +30,9 @@ rox = df[df['Team'] == '2025 COL']
 last_game = rox.iloc[-1] # get the last row (game)
 
 if (last_game['R'] > last_game['RA']): # the rockies win
-    print(f"The Rockies won game {last_game['Games Played']}, {last_game['R']} to {last_game['RA']}.\nThe Rockies are now {last_game['Games Played'] - last_game['Losses']} - {last_game['Losses']}.")
+    st.write(f"The Rockies won game {last_game['Games Played']}, {last_game['R']} to {last_game['RA']}.\nThe Rockies are now {last_game['Games Played'] - last_game['Losses']} - {last_game['Losses']}.")
 else: # the rockies lost
-    print(f"The Rockies lost game {last_game['Games Played']}, {last_game['R']} to {last_game['RA']}.\nThe Rockies are now {last_game['Games Played'] - last_game['Losses']} - {last_game['Losses']}.")
+    st.write(f"The Rockies lost game {last_game['Games Played']}, {last_game['R']} to {last_game['RA']}.\nThe Rockies are now {last_game['Games Played'] - last_game['Losses']} - {last_game['Losses']}.")
 
 # calculate projected losses for a 162-game season
 latest_rockies = df[df['Team'] == '2025 COL'].iloc[-1]  # get the latest game for the Rockies
