@@ -68,7 +68,7 @@ else:
 # SCORECARDS
 st.subheader("Team Summaries")
 columns = st.columns(3) 
-teams = df['Team'].unique()
+teams = ['2025 COL', '2024 CHW', '1962 NYM']
 
 for i, team in enumerate(teams):
     team_df = df[df['Team'] == team]
