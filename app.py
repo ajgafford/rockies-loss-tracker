@@ -85,7 +85,7 @@ st.markdown("""
     """)
 
 # SLIDER
-st.subheader("Losses by Game Number")
+st.subheader("Losses by Games Played")
 game_limit = st.slider("Show up to game #:", 1, max_games, max_games)
 
 filtered_df = df[df['Games Played'] <= game_limit]
