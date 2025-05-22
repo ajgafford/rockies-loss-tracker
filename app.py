@@ -164,3 +164,8 @@ fig = px.line(
 )
 
 st.plotly_chart(fig, use_container_width=True)
+
+st.markdown(
+    "<small style='color:gray;'>Data sourced from <a href='https://www.baseball-reference.com/' target='_blank'>Baseball Reference</a></small>",
+    unsafe_allow_html=True
+)
