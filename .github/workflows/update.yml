@@ -20,13 +20,13 @@ jobs:
           pip install -r requirements.txt
       - name: Run update script
         run: python Scripts/run_scripts.py
-      - name: Commit & push changes
-        run: |
-          git config --global user.name "ajgafford"
-          git config --global user.email "andrew.gafford@gmail.com"
-          git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m "Automated data update"
-          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/ajgafford/rockies-loss-tracker.git
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-
+      - name: Push changes
+  run: |
+    git config --global user.name "ajgafford"
+    git config --global user.email "andrew.gafford@gmail.com"
+    git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/ajgafford/rockies-loss-tracker.git
+    git add .
+    git diff --quiet && git diff --staged --quiet || git commit -m "Automated data update"
+    git push origin main
+  env:
+    PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
