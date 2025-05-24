@@ -12,7 +12,7 @@ os.makedirs(raw_data_dir, exist_ok=True)
 def fetch_game_data():
     url = 'https://www.baseball-reference.com/teams/COL/2025-schedule-scores.shtml'
     headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     }
     response = requests.get(url, headers=headers)
     
