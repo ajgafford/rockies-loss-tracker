@@ -33,12 +33,12 @@ columns = st.columns(2)
 
 with columns[0]:
     if (last_game['R'] > last_game['RA']): # the rockies win
-        st.metric(label="Rockies Won!", value=f"{last_game["R"]} - {last_game["RA"]}")
+        st.metric(label="Rockies Won!", value=f"{last_game['R']} - {last_game['RA']}")
     else: # the rockies lost
-        st.metric(label="Rockies Lost!", value=f"{last_game["R"]} - {last_game["RA"]}")
+        st.metric(label="Rockies Lost!", value=f"{last_game['R']} - {last_game['RA']}")
 
 with columns[1]:
-    st.metric(label="Record", value=f"{last_game["Games Played"] - last_game["Losses"]} - {last_game["Losses"]}")
+    st.metric(label="Record", value=f"{last_game['Games Played'] - last_game['Losses']} - {last_game['Losses']}")
 
 # calculate projected losses for a 162-game season
 latest_rockies = df[df['Team'] == '2025 COL'].iloc[-1]  # get the latest game for the Rockies
