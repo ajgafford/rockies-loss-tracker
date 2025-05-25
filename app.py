@@ -29,12 +29,16 @@ st.subheader("Last Game Results")
 rox = df[df['Team'] == '2025 COL']
 last_game = rox.iloc[-1] # get the last row (game)
 
-if (last_game['R'] > last_game['RA']): # the rockies win
-    st.write(f"The Rockies won game {last_game['Games Played']} by the score of {last_game['R']} to {last_game['RA']}.")
-    st.write(f"The Rockies are now {last_game['Games Played'] - last_game['Losses']} - {last_game['Losses']}.")
-else: # the rockies lost
-    st.write(f"The Rockies lost game {last_game['Games Played']} by the score of {last_game['R']} to {last_game['RA']}.")
-    st.write(f"The Rockies are now {last_game['Games Played'] - last_game['Losses']} - {last_game['Losses']}.")
+columns = st.columns(2)
+
+with columns[0]:
+    if (last_game['R'] > last_game['RA']): # the rockies win
+        st.metric(label="Rockies Won!", value=f"{last_game["R"]} - {last_game["RA"]}")
+    else: # the rockies lost
+        st.metric(label="Rockies Lost!", value=f"{last_game["R"]} - {last_game["RA"]}")
+
+with columns[1]:
+    st.metric(label="Record", value=f"{last_game["Games Played"] - last_game["Losses"]} - {last_game["Losses"]}")
 
 # calculate projected losses for a 162-game season
 latest_rockies = df[df['Team'] == '2025 COL'].iloc[-1]  # get the latest game for the Rockies
